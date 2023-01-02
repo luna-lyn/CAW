@@ -1,0 +1,16 @@
+.likebtn button{
+width: 3.4vw;
+height: 6vh;
+background-color: white;
+border: 1px solid transparent;
+box-shadow: #F66306 0px 1px 4px, rgba(173, 4, 4, 0.4) 0px 3px 6px;
+color: red;
+align-items: center;
+text-align: center;
+cursor: pointer;
+margin-top: 1vh;
+}
+
+.likebtn .heart{
+    font-size: 1.5rem;
+}

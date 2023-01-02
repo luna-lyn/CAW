@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Dr+Sugiyama&display=swap');
+
+*{
+  font-family: sans-serif;
+}
+.btnn{
+    border: 1px solid transparent;
+    background: none;
+    padding: 10px 19px;
+    font-size: 17px;
+    font-family: sans-serif;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+  }
+ 
+  .btn2{
+    color: #fff;
+    z-index: 1;
+  }
+ 
+ .btn2:hover{
+  color: #F66306;
+  border: 1.5px solid #F66306;
+  }
+  .btnn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(45deg, #e94c4c,  #f48e21);
+    z-index: -1;
+    transition: 0.8s;
+  }
+
+  .btn2::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+  }
+ .btn2::before{
+    height: 180%;
+  }
+ 
+ .btn2:hover::before{
+    height: 0%;
+  }
+  
+
+h3{
+  font-family: 'Dr Sugiyama', cursive;
+  font-size: 30px;
+}
+
+
+  .contactli ul {
+    counter-reset: index;  
+    padding: 0;
+    max-width: 300px;
+  }
+  
+  /* List element */
+  .contactli li {
+    counter-increment: index; 
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    box-sizing: border-box;
+  }
+  .contactli li h3{
+   width: 15vw;
+   margin-right: 0px;
+  }
+  .contactli li h4{
+    width: 10vw;
+    margin-right: 0px;
+   }
+ 
+  
+  
+  /* Element counter */
+  .contactli li::before {
+    content: counters(index, ".", decimal-leading-zero);
+    font-size: 1.5rem;
+    text-align: right;
+    font-weight: bold;
+    min-width: 50px;
+    padding-right: 12px;
+    font-variant-numeric: tabular-nums;
+    align-self: flex-start;
+    background-image: linear-gradient(to bottom, aquamarine, orangered);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  
+  /* Element separation */
+  .contactli li + li {
+    border-top: 1px solid rgba(214, 21, 21, 0.5);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @use postcss-preset-env {
+    stage: 0;
+    autoprefixer: {
+      grid: true;
+    }
+    browsers: last 2 versions
+  }
+ 
+  .searchdiv{
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid rgba(214, 21, 21, 0.5);
+    box-shadow: 7px 7px 8px #888888;
+    /* border-top: none ;
+    border-left: none; */
+    margin: auto;
+    margin-bottom: 20%;
+    margin-top: 20%;
+
+    padding: 10px;
+  }
+  .contactli h5{
+    margin-right: 4%;
+  }
+
+  .contactli #searchbar{
+    width: 13vw;
+    height: 5vh;
+    margin-right: 0%;
+    margin-top: 4.5%;
+    border: 1px solid rgba(214, 21, 21, 0.5);
+    border-top: none ;
+    border-right: none;
+  }
